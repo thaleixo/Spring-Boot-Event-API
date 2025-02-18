@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -11,6 +12,7 @@ import java.time.LocalTime;
 @Entity
 @Table(name = "tbl_event")
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Event {
@@ -26,7 +28,7 @@ public class Event {
     private String location;
     @Column(name = "price",nullable = false)
     private Double price;
-    @Column(name = "start_data")
+    @Column(name = "start_date")
     private LocalDate startDate;
     @Column(name = "end_date")
     private LocalDate endDate;
