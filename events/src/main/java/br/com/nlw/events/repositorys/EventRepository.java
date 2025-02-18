@@ -1,4 +1,7 @@
 package br.com.nlw.events.repositorys;
 
-public interface EventRepository {
+import br.com.nlw.events.entitys.Event;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EventRepository extends JpaRepository<Event, Integer> {
 }
