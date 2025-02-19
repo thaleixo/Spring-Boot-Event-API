@@ -1,8 +1,8 @@
 package br.com.nlw.events.Exceptions;
 
-public class EventNotFound extends RuntimeException{
+public class EventNotFoundException extends RuntimeException{
 
-    public EventNotFound(String msg){
+    public EventNotFoundException(String msg){
         super(msg);
     }
 }
