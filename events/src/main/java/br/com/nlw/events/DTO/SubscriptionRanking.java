@@ -1,4 +1,4 @@
 package br.com.nlw.events.DTO;
 
-public class SubscriptionRanking {
+public record SubscriptionRanking (Long count,Integer user_id, String name ){
 }

@@ -1,4 +1,6 @@
 package br.com.nlw.events.DTO;
 
-public class SubscriptionRankingByUser {
+import java.util.List;
+
+public record SubscriptionRankingByUser (SubscriptionRanking ranking, Integer userPosition){
 }
